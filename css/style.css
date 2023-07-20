@@ -14,15 +14,11 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   background-color: black;
   color: white;
 }
 
-footer {
-  background-color: rgb(74, 74, 74) ; 
-  height: 60px;
-}
 
 /* uitlities  */
 
@@ -48,6 +44,7 @@ header {
 
 .topbar > * {
   margin: 3px;
+  padding: 2px 4px;
   border-radius: 5px;
   background-color: #4a4a4a;
 }
@@ -62,43 +59,65 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-} 
-
-.topbar > * {
-  padding: 5px 10px;
 }
 
-
 .card {
+  position: relative;
   width: 200px;
   height: 110px;
   margin: 2px;
-  border: 1px dotted brown;
-  background-color: lightpink;
-  position: relative;
 }
 
 .card .name {
   position: absolute;
-  bottom: 0;
   left: 0;
-  font-size: 0.7rem;
-  color: white;
+  bottom: 0;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 5px 10px;
 }
 
 /* --------------
   FOOTER
 --------------- */
+/* possiamo provare  */
+/* align-items: baseline; */
 
-footer {
+.bottombar {
+  height: 60px;
   justify-content: space-between;
-  /* possiamo provare  */
-  /* align-items: baseline; */
+  background-color: #222222; 
 }
 
-footer > * {
-  height: 100%;
+.bottombar *  {
   align-items: center;
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+.device > * {
+  margin: 0 10px;
+}
+
+.option > * {
+  margin: 0 10px;
+}
+
+footer .close {
+  padding: 15px;
+  background-color: #4a4a4a;
+  color: red;
+}
+
+footer i {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+footer i.arrow {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+i.option-green {
+  color: greenyellow;
 }
