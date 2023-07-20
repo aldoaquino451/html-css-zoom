@@ -12,42 +12,74 @@ color
 /* general  */
 
 html {
-  /* font  */
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
   background-color: lightblue;
-  height: 50px;
+  height: 40px;
   justify-content: flex-end;
+}
+
+.header-content {
+  height: 100%;
 }
 
 main {
   background-color: lightcoral;
-  height: calc(100vh - 70px - 50px);
+  height: calc(100vh - 60px - 40px);
   overflow: auto;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 }
 
 footer {
   background-color: lightgoldenrodyellow; 
-  height: 70px;
+  height: 60px;
 }
 
 .d-flex {
   display: flex;
 }
 
-/* main  */
+.col {
+  flex-direction: column  ;
+}
 
 .topbar > * {
   background-color: lightgreen;
   padding: 5px 10px;
 }
 
+/* main  */
+
 .card {
+  width: 200px;
+  height: 110px;
+  margin: 2px;
   border: 1px dotted brown;
   background-color: lightpink;
-  height: 200px;
-  width: 200px;
+  position: relative;
+}
+
+.card .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.7rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+}
+
+footer {
+  justify-content: space-between;
+  /* possiamo provare  */
+  /* align-items: baseline; */
+}
+
+footer > * {
+  height: 100%;
+  align-items: center;
 }

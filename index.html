@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css style  -->
   <link rel="stylesheet" href="./css/style.css">
   <title>Zoom</title>
 
@@ -19,42 +20,104 @@
 <body>
 
   <header class="d-flex">
-    <div class="topbar d-flex">
-      <div class="speaker">Speaker View</div>
-      <div class="full-screen">full-screen </div>
+    <div class="header-content">
+
+      <div class="topbar d-flex">
+        <div class="speaker">
+          <i class="fa-solid fa-table-cells"></i>
+          <span>Speaker View</span>
+        </div>
+        <div class="full-screen"> 
+          <i class="fa-sharp fa-solid fa-arrows-up-down-left-right" ></i>
+        </div>
+      </div>
+
     </div>
   </header>
 
   <main class="d-flex">
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <div class="card">
+      <img src="https://picsum.photos/200/110" alt="placehold">
+      <div class="name">
+        <i class="fa-solid fa-microphone-slash"></i>
+        <span>Pinco Pallo</span>
+      </div>
+    </div>
   </main>
 
-  <footer>footer</footer>
+  <footer class="d-flex">
 
+    <div class="device d-flex">
+      <div class="microphon d-flex">
+        <div class="d-flex col">
+          <i class="fa-solid fa-microphone"></i>
+          <span>Mute</span>
+        </div>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+
+      <div class="webcam d-flex">
+        <div class="d-flex col">  
+          <i class="fa-solid fa-video"></i> 
+          <span>Stop Video</span>
+        </div> 
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+
+    <div class="option d-flex">
+
+      <div class="d-flex col">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Invite</span>
+      </div>
+      
+      <div class="d-flex col">
+        <i class="fa-solid fa-user-group"></i>
+        <span>Manage Parecipants</span>
+      </div>
+      
+      <div class="d-flex col">
+        <i class="fa-solid fa-chart-column"></i>
+        <span>Polling</span>
+      </div>
+      
+      <div class="d-flex col">
+        <div>
+          <i class="fa-solid fa-share-from-square"></i>
+          <span>Share Screen</span>
+        </div>        
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      
+      <div class="d-flex col">
+        <i class="fa-solid fa-comment"></i>
+        <span>Chat</span>
+      </div>
+      
+      <div class="d-flex col">
+        <i class="fa-solid fa-record-vinyl"></i>
+        <span>Record</span>
+      </div>
+      
+      <div class="d-flex col">
+        <i class="fa-solid fa-border-all"></i>
+        <span>Breakout Rooms</span>
+      </div>
+      
+      <div class="d-flex col">
+        <i class="fa-solid fa-ellipsis"></i>
+        <span>More</span>
+      </div>
+      
+
+    </div>
+
+    <div class="close d-flex">
+      End Meeting
+    </div>
+  </footer>
+  
 </body>
 
 </html>
