@@ -1,3 +1,8 @@
+/*
+color
+
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +17,37 @@ html {
 
 header {
   background-color: lightblue;
+  height: 50px;
+  justify-content: flex-end;
 }
 
 main {
   background-color: lightcoral;
+  height: calc(100vh - 70px - 50px);
+  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 footer {
-  background-color: lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow; 
+  height: 70px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* main  */
+
+.topbar > * {
+  background-color: lightgreen;
+  padding: 5px 10px;
+}
+
+.card {
+  border: 1px dotted brown;
+  background-color: lightpink;
+  height: 200px;
+  width: 200px;
 }
