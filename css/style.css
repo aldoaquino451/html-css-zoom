@@ -55,10 +55,9 @@ header {
 
 main {
   height: calc(100vh - 60px - 40px);
-  overflow: auto;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 .card {
@@ -68,7 +67,7 @@ main {
   margin: 2px;
 }
 
-.card .name {
+.card-name {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -90,8 +89,8 @@ main {
 
 .bottombar *  {
   align-items: center;
-  /* justify-content: center; */
-  /* text-align: center; */
+  justify-content: center;
+  text-align: center;
 }
 
 .device > * {
@@ -103,7 +102,7 @@ main {
 }
 
 footer .close {
-  padding: 15px;
+  padding: 15px;      
   background-color: #4a4a4a;
   color: red;
 }
