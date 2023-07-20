@@ -1,7 +1,6 @@
-/*
-color
-
-*/
+/* --------------
+  RESET
+--------------- */
 
 * {
   margin: 0;
@@ -9,35 +8,23 @@ color
   box-sizing: border-box;
 }
 
-/* general  */
+/* --------------
+  GENERAL
+--------------- */
 
 html {
   font-family: 'Open Sans', sans-serif;
-}
-
-header {
-  background-color: lightblue;
-  height: 40px;
-  justify-content: flex-end;
-}
-
-.header-content {
-  height: 100%;
-}
-
-main {
-  background-color: lightcoral;
-  height: calc(100vh - 60px - 40px);
-  overflow: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  font-size: 12px;
+  background-color: black;
+  color: white;
 }
 
 footer {
-  background-color: lightgoldenrodyellow; 
+  background-color: rgb(74, 74, 74) ; 
   height: 60px;
 }
+
+/* uitlities  */
 
 .d-flex {
   display: flex;
@@ -47,12 +34,40 @@ footer {
   flex-direction: column  ;
 }
 
+/* --------------
+  HEADER
+--------------- */
+
+header {
+  height: 40px;
+}
+
+.topbar {
+  justify-content: flex-end;
+}
+
 .topbar > * {
-  background-color: lightgreen;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+}
+
+/* --------------
+  MAIN
+--------------- */
+
+main {
+  height: calc(100vh - 60px - 40px);
+  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+} 
+
+.topbar > * {
   padding: 5px 10px;
 }
 
-/* main  */
 
 .card {
   width: 200px;
@@ -72,6 +87,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 5px 10px;
 }
+
+/* --------------
+  FOOTER
+--------------- */
 
 footer {
   justify-content: space-between;
